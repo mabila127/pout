@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About MyBusiness</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    body.dark-mode .navbar-dark {
+      background-color: #1f1f1f !important;
+    }
+    body.dark-mode .btn-outline-light {
+      color: #e0e0e0;
+      border-color: #e0e0e0;
+    }
+    body.dark-mode .btn-outline-light:hover {
+      background-color: #e0e0e0;
+      color: #121212;
+    }
+    .card.dark-mode {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      border-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MyBusiness</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Mobile dark mode toggle -->
+      <div class="d-flex d-lg-none ms-auto">
+        <button
+          id="darkModeToggleMobile"
+          class="btn btn-outline-light me-2"
+          title="Toggle dark mode"
+          type="button"
+        >
+          <i class="bi bi-moon-fill"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        </ul>
+
+        <form class="d-flex me-3 mt-3 mt-lg-0" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search..."
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light" type="button">Search</button>
+        </form>
+
+        <button
+          class="btn btn-warning ms-lg-3 mt-2 mt-lg-0"
+          data-bs-toggle="modal"
+          data-bs-target="#cartModal"
+          type="button"
+        >
+          🛒 Cart (<span id="cartCount">0</span>)
+        </button>
+
+        <!-- Desktop dark mode toggle -->
+        <button
+          id="darkModeToggleDesktop"
+          class="btn btn-outline-light ms-2 d-none d-lg-inline"
+          title="Toggle dark mode"
+          type="button"
+        >
+          <i class="bi bi-moon-fill"></i>
+        </button>
+
+        <button class="btn btn-outline-light ms-2 mt-2 mt-lg-0" type="button">
+          Login
+        </button>
+        <button class="btn btn-primary ms-2 mt-2 mt-lg-0" type="button">
+          Signup
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <section class="text-center mb-5">
+      <h1>Tell Us More About MyBusiness</h1>
+      <p class="lead">
+        MyBusiness is your trusted partner delivering innovative solutions that
+        empower your growth. We blend expertise with dedication to bring you
+        unparalleled service.
+      </p>
+    </section>
+
+    <section class="row gy-4">
+      <article class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm p-3">
+          <h3>What We Do</h3>
+          <p>
+            We specialize in tailored software development, strategic consulting,
+            and IT support, designed to scale with your business needs and
+            maximize efficiency.
+          </p>
+        </div>
+      </article>
+
+      <article class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm p-3">
+          <h3>Why Choose Us</h3>
+          <p>
+            At MyBusiness, integrity, innovation, and client success are at the
+            core of everything we do. We build lasting partnerships through
+            transparent communication and exceptional results.
+          </p>
+        </div>
+      </article>
+
+      <article class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm p-3">
+          <h3>Our Commitment</h3>
+          <p>
+            We are committed to providing continuous support and evolving our
+            solutions to keep your business competitive and ahead of the curve in
+            a rapidly changing market.
+          </p>
+        </div>
+      </article>
+
+      <article class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm p-3">
+          <h3>Our Approach</h3>
+          <p>
+            We prioritize understanding your unique challenges and goals to
+            deliver customized strategies that yield measurable impact.
+          </p>
+        </div>
+      </article>
+
+      <article class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm p-3">
+          <h3>Customer Success</h3>
+          <p>
+            Our clients’ success stories inspire us. We provide ongoing training,
+            optimization, and consulting to ensure you get the most value from
+            our solutions.
+          </p>
+        </div>
+      </article>
+
+      <article class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm p-3">
+          <h3>Get In Touch</h3>
+          <p>
+            Interested in learning how we can help your business? Reach out to
+            us anytime — we're here to listen and provide expert guidance.
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; <footer class="bg-dark text-white mt-5">
+  <div class="container py-4">
+    <div class="row">
+      <!-- About -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase">MyBusiness</h5>
+        <p>
+          Delivering innovative and reliable solutions for businesses worldwide.
+          Your success is our priority.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+          <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase">Contact</h5>
+        <p><strong>Email:</strong> support@mybusiness.com</p>
+        <p><strong>Phone:</strong> +234 800 123 4567</p>
+        <div>
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center border-top border-secondary pt-3 mt-3">
+      <p class="mb-0">&copy; 2025 MyBusiness. All rights reserved.</p>
+    </div>
+  </div>
+</footer>.</p>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const body = document.body;
+    const toggleButtons = [
+      document.getElementById('darkModeToggleMobile'),
+      document.getElementById('darkModeToggleDesktop')
+    ];
+
+    toggleButtons.forEach(btn => {
+      if (btn) {
+        btn.addEventListener('click', () => {
+          body.classList.toggle('dark-mode');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
